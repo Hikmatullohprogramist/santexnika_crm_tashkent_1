@@ -17,23 +17,21 @@ import '../screens/trade/trade_main.dart';
 bool isProduction = false;
 
 class AppConstants {
-  static String BASE_URL =
-      "http://${isProduction == true ? "production." : ""}tillo2sp.beget.tech/api/";
+  static String BASE_URL = "http://savdogar1.tillo2sp.beget.tech/api/";
   static const double DEFAULT_PADDING = 16;
   static const String ACCESS_TOKEN = "token";
   static List<Widget> pages = [
-       TradeMain(),
-        StorePage(),
-        CustomerMain(),
-        ReturnedOnesMain(),
-        FirmsMain(),
-        StatisticMain(),
-        SettingsMain(),
-        ExpensesMain(),
-        SoldMain(),
+    TradeMain(),
+    StorePage(),
+    CustomerMain(),
+    ReturnedOnesMain(),
+    FirmsMain(),
+    StatisticMain(),
+    SettingsMain(),
+    ExpensesMain(),
+    SoldMain(),
   ];
   static bool isAccessEditAndDelete = true;
-
 
   static String currentBranch = "";
   static String currentBranchUser = "";
@@ -81,5 +79,4 @@ class AppConstants {
   //   pagess = pages;
   //   return pagess;
   // }
-
 }
